@@ -34,7 +34,7 @@ pipeline{
         }
         stage('docker create service'){
             steps{
-                sh '/usr/bin/docker service create --name flaskservice --replicas 2 -p 8000:8000 shubhangi218/python'
+                sh '/usr/bin/docker service create --name flaskservice --replicas 2 -p 4000:4000 shubhangi218/python'
             }
         }
 
