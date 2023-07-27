@@ -29,7 +29,7 @@ pipeline{
         }
         stage('docker remove service'){
             steps{
-                sh '/usr/bin/docker service rm flaskservice'
+                sh '/usr/bin/docker service rm service2'
             }
         }
         stage('docker create service'){
